@@ -1,3 +1,7 @@
+DEMO DA APLICAÇÃO HOSPEDADA NO LINK: http://testdanilogoulart.cf
+
+Tal hospedagem só me permiti realizar tarefas CRON de uma em uma hora, por isso o demo da aplicação realiza a insersação automática no intervalo de uma hora.
+
 ## Development Knowledge Test
 
 This will be a practical test to analyze your knowledge using GIT and CodeIgniter. However, any additional knowledge that can be used, i.e., reasonable, will also be analyzed.
@@ -24,3 +28,5 @@ Will be also analyzed, code organization (we follow PSR-2), creativity and funct
 When you finish, do a PR and we analyze.
 
 **Do your best! :wink:**
+
+

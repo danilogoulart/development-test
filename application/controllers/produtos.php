@@ -73,23 +73,18 @@ class Produtos extends CI_Controller {
 	public function salvaratualizacao()
 	{
 		$id = $this->input->post('produtocodigo');
-		$data2['nome_produto'] = $this->input->post('produtonome');
-		$data2['preco_produto'] = $this->input->post('precoproduto');
-		$data2['qnt_estoque'] = $this->input->post('qntproduto');
+		$data['nome_produto'] = $this->input->post('produtonome');
+		$data['preco_produto'] = $this->input->post('precoproduto');
+		$data['qnt_estoque'] = $this->input->post('qntproduto');
 
 		$this->db->where('id_produto',$id);
-		$this->db->update('produtos',$data2);
-		
-		if($this->db->trans_status() === true){
-		        $this->db->trans_commit();
-		        redirect('produtos/5');
-		        return true;
-		    }else{
-		        $this->db->trans_rollback();
-		        redirect('produtos/6');
-		        return false;
+
+		if($this->db->update('produtos',$data)){
+			redirect('produtos/5');
+		}else{
+			redirect('produtos/6');
 		}
-	
+
 
 
 
