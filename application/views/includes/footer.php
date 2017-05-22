@@ -1,3 +1,30 @@
+<div class="extra">
+
+    <div class="extra-inner">
+
+        <div class="container">
+
+            <div class="row">
+                    <div class="span3">
+                        <h4>
+                            Navegue</h4>
+                        <ul>
+                            <li><a href="javascript:;">Home</a></li>
+                            <li><a href="javascript:;">Produtos</a></li>
+                            <li><a href="javascript:;">Pedidos</a></li>
+                            
+                        </ul>
+                    </div>
+                    <!-- /span3 -->
+                    
+                </div> <!-- /row -->
+
+        </div> <!-- /container -->
+
+    </div> <!-- /extra-inner -->
+
+</div> <!-- /extra -->
+
 <div class="footer">
     <div class="footer-inner">
         <div class="container">
@@ -21,13 +48,6 @@
 <script src="<?=base_url()?>assets/js/chart.min.js" type="text/javascript"></script> 
 <script src="<?=base_url()?>assets/js/bootstrap.js"></script>
 <script src="<?=base_url()?>assets/js/base.js"></script> 
-<script type="text/javascript">
-    $(document).ready(function() {
-        $('.mainnav li a').click(function(){
-            $(this).addClass('active');
-        });
-    });
-</script>
 
 </body>
 

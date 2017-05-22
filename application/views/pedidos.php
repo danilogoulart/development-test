@@ -1,3 +1,4 @@
+
 <div class="main">
     <div class="main-inner">
         <div class="container">
@@ -6,64 +7,29 @@
           	      		<div class="widget widget-table action-table">
                           <div class="widget-header"> 
                               <i class="icon-th-list"></i>
-                              <h3>Relatório de Estoque Baixo</h3>
+                              <h3>Relatório de Pedidos</h3>
                           </div>
                           <!-- /widget-header -->
                           <div class="widget-content">
                               <table class="table table-striped table-bordered">
                                   <thead>
                                       <tr>
-                                        <th> Nº da OV </th>
+                                        <th> Nº do Pedido </th>
                                         <th> Produtos</th>
-                                        <th> Valor Total </th>
-                    					          <th></th>
+                                        <th> Valor Total (R$) </th>
+                    					          <th> Data do Pedido</th>
                                       </tr>
                                   </thead>
                                   <tbody>
-                                      <tr>
-                                          <td> Fresh Web Development Resources </td>
-                                          <td> http://www.egrappler.com/ </td>
-                      					          <td> http://www.egrappler.com/ </td>
-                                          <td class="td-actions">
-                                              <a href="javascript:;" class="btn btn-small btn-success">
-                                                  <i class="btn-icon-only icon-ok"></i>
-                                              </a>
-                                              <a href="javascript:;" class="btn btn-danger btn-small">
-                                                <i class="btn-icon-only icon-remove"> </i>
-                                              </a>
-                                          </td>
-                                      </tr>
-                                      <tr>
-                                        <td> Fresh Web Development Resources </td>
-                                        <td> http://www.egrappler.com/ </td>
-                    				          	<td> http://www.egrappler.com/ </td>
-                                        <td class="td-actions">
-                                            <a href="javascript:;" class="btn btn-small btn-success">
-                                                <i class="btn-icon-only icon-ok"> </i>
-                                            </a>
-                                            <a href="javascript:;" class="btn btn-danger btn-small">
-                                                <i class="btn-icon-only icon-remove"> </i>
-                                            </a>
-                                        </td>
-                                      </tr>
-                                      <tr>
-                                        <td> Fresh Web Development Resources </td>
-                                        <td> http://www.egrappler.com/ </td>
-                    					          <td> http://www.egrappler.com/ </td>
-                                        <td class="td-actions"><a href="javascript:;" class="btn btn-small btn-success"><i class="btn-icon-only icon-ok"> </i></a><a href="javascript:;" class="btn btn-danger btn-small"><i class="btn-icon-only icon-remove"> </i></a></td>
-                                      </tr>
-                                      <tr>
-                                        <td> Fresh Web Development Resources </td>
-                                        <td> http://www.egrappler.com/ </td>
-                    				          	<td> http://www.egrappler.com/ </td>
-                                        <td class="td-actions"><a href="javascript:;" class="btn btn-small btn-success"><i class="btn-icon-only icon-ok"> </i></a><a href="javascript:;" class="btn btn-danger btn-small"><i class="btn-icon-only icon-remove"> </i></a></td>
-                                      </tr>
-                                      <tr>
-                                        <td> Fresh Web Development Resources </td>
-                                        <td> http://www.egrappler.com/ </td>
-                    			           		<td> http://www.egrappler.com/ </td>
-                                        <td class="td-actions"><a href="javascript:;" class="btn btn-small btn-success"><i class="btn-icon-only icon-ok"> </i></a><a href="javascript:;" class="btn btn-danger btn-small"><i class="btn-icon-only icon-remove"> </i></a></td>
-                                      </tr>                                  
+                                      <?php foreach ($pedidos as $pedido) {?>
+                                    <tr>                                        
+                                        <td> <?=$pedido->id_pedido;?> </td>
+                                        <td> <?=$pedido->nome_produto;?> </td>
+                                        <td> <?=number_format($pedido->valor_pedido,2,",",".");?></td>
+                                        <td> <?=date('d/m/Y', strtotime($pedido->data_pedido));;?> </td>
+                                        
+                                    </tr>
+                                    <?php } ?>                                  
                                     </tbody>
                                 </table>
                             </div>

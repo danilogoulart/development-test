@@ -46,7 +46,7 @@ Bootstrap Admin Template by EGrappler.com
 .plan-price {
 	padding: 20px 0 10px;
 	
-    font-size: 66px;
+    font-size: 30px;
     line-height: 0.8em;
     
 	background-color: #797979;
@@ -283,7 +283,7 @@ Bootstrap Admin Template by EGrappler.com
 
 
 .plan.green .plan-header {
-	background-color: #00ba8b ;
+	background-color: #000; ;
 }
 
 .plan.green .plan-price {

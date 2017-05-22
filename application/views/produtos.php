@@ -16,7 +16,6 @@ $variavel = "";
                                 <a class="btn btn-primary dropdown-toggle" data-toggle="dropdown" href="#"><span class="caret"></span></a>
                                 <ul class="dropdown-menu">
                                     <li><a href="#myModal" role="button"data-toggle="modal"><i class="icon-pencil"></i> Novo Produto</a></li>
-                                    <li><a href="#myModal1" role="button"data-toggle="modal"><i class="icon-trash"></i> Editar Produto</a></li>
                                 </ul>
                             </div>
 
@@ -32,43 +31,6 @@ $variavel = "";
 
                                         <label for="nome_produto">Nome do produto:</label>
 
-                                        <input type="text" name="nome_produto" required="required" placeholder="Nome do Produto...">
-
-                                        <label for="preco_produto">Preço do produto (R$):</label>
-
-                                        <input type="number" step="0.01" name="preco_produto" required="required" placeholder="Preço do produto...">
-
-                                        <label for="qnt_estoque">Quantidade em estoque:</label>
-
-                                        <input type="number" name="qnt_estoque" required="required" placeholder="Quantidade em estoque...">
-
-                                    </div>
-                                    <div class="modal-footer">
-                                        <button class="btn" data-dismiss="modal" aria-hidden="true">Cancelar</button>
-                                        <button class="btn btn-primary">Salvar Alterações</button>
-                                    </div>
-                                </form>
-                            </div>
-                            
-                            <div id="myModal1" class="modal hide fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-
-                                <div class="modal-header">
-                                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
-                                    <h3 id="myModalLabel">Editar Produto</h3>
-                                </div>
-                                <form method="post" action="<?=base_url()?>produtos/cadastrar">
-                                    <div class="modal-body">
-
-
-                                        <label for="nome_produto">Produto a ser alterado:</label>
-                                        <select name="nome_produto" id="nome_produto">
-                                        <?php foreach ($produtos as $produto) {?>                                       
-                                            <option><?=$produto->nome_produto;?></option>
-                                        
-                                        <?php } ?>
-                                        </select>
-                                        
-                                        <label for="nome_produto">Alterar:</label>
                                         <input type="text" name="nome_produto" required="required" placeholder="Nome do Produto...">
 
                                         <label for="preco_produto">Preço do produto (R$):</label>

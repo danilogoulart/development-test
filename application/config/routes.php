@@ -43,5 +43,7 @@ $route['produtos/(:num)'] = "produtos/index/$1";
 $route['404_override'] = '';
 
 
+
+
 /* End of file routes.php */
 /* Location: ./application/config/routes.php */

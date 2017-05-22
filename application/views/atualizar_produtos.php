@@ -61,7 +61,7 @@
 										
 											
 										<div class="form-actions">
-											<button type="submit" class="btn btn-primary">Save</button> 
+											<button type="submit" class="btn btn-primary">Salvar</button> 
 											<button type="reset" class="btn">Cancel</button>
 										</div> <!-- /form-actions -->
 									</fieldset>
